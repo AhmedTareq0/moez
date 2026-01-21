@@ -1,0 +1,266 @@
+.gradient-bg,
+.modal-body .nws-button button,
+.teacher-pic-content .teacher-img-content:after,
+.course-details-category li:hover,
+.add-cart:after,
+.category-icon-title:after,
+.gradient-bdr,
+.address-icon {
+  background: #107462 !important;
+  background-size: 200% auto;
+}
+
+.section-title .subtitle:before,
+.section-title .subtitle:after {
+  color: #107462 !important;
+  text-shadow: 15px 0 #107462 !important;
+}
+
+.breadcrumb-section .breadcrumb-item {
+  background-color: #107462 !important;
+}
+
+.nav-menu li a:after {
+  background: #ff8933 !important;
+  background-size: 200% auto;
+}
+
+.cart-search li {
+  border: 2px solid #107462 !important;
+}
+
+.sub-menu:before {
+  border-top: 10px solid #107462 !important;
+}
+
+.search-body .search-form .search-close {
+  background-color: #107462 !important;
+}
+
+.sub-menu li a:hover {
+  color: #107462 !important;
+}
+
+.header-style-2 .sub-menu li a:hover {
+  color: #107462 !important;
+}
+
+#slider-item .genius-btn {
+  border: 2px solid #107462 !important;
+}
+
+#slider-item .slider-course-category li:hover {
+  color: #107462 !important;
+}
+
+.coming-countdown li {
+  border: 2px solid #107462 !important;
+}
+
+.home-secound-course-search .about-list li {
+  color: #107462 !important;
+}
+
+.search-course-secound .counter-number p {
+  color: #107462 !important;
+}
+
+.search-course-third .counter-icon-number:after {
+  background-color: #107462 !important;
+}
+
+.select-lang select,
+.nav-menu-4 .login-cart-lang .login a,
+.course-meta .course-category,
+.latest-events .course-meta .course-author,
+.about-teacher-2 .section-title-2 h2 b,
+.testimonial-slide .student-name-designation span,
+.view-all-btn i,
+.teacher-img-content .teacher-category .st-name,
+.secound-teacher-section .teacher-img-text .teacher-designation,
+.teacher-pic-content .teacher-social-name li,
+.teacher-pic-content .teacher-name-designation .teacher-designation,
+.teacher-details-text .teacher-deg span,
+.best-product-section .price-start span,
+.best-sellers-pic-text .b-price,
+.panel-group .panel-title .btn-link,
+.panel-group .panel-title .btn-link:before,
+.panel-group .panel-title .btn-link:after,
+.panel-group .panel-title .btn-link:hover,
+.version-four .features-icon .feat-tag span,
+.blog-details-content .date-meta span,
+.blog-details-content .author-comment .author-designation-comment span,
+.blog-details-content .next-prev-post i,
+.blog-comment-area .author-name-rate span,
+.affiliate-market-accordion .panel-group .panel-title .btn-link span,
+.course-by b,
+.avrg-rating .avrg-rate,
+.course-side-bar-widget h3 span,
+.course-side-bar-widget h3 span,
+.student-number,
+.checkbox label .sub-text b,
+.terms-text b,
+.purchase-list .in-total span,
+.footer-menu li i {
+  color: #107462;
+}
+
+.about-us-text .section-title:after,
+.about-list li:before,
+.testimonial-slide .student-name-designation span:before,
+.teacher-img-content .teacher-img:after,
+.teacher-desc-social li:hover,
+.ui-slider-horizontal .ui-slider-handle,
+ul.product-tab li:after,
+.panel-group .panel-body:before,
+.blog-button ul.product-tab li.active,
+.side-bar-widget .tag-clouds li:hover,
+.blog-details-content .blog-category li:hover,
+.course-page-section .course-type-list span,
+.avrg-rating .rating-overview:hover .start-bar,
+.section-title-2 h2:after {
+  background-color: #107462 !important;
+}
+
+.cart-search li,
+#slider-item .genius-bt,
+.coming-countdown li,
+.secound-teacher-section .teacher-img-text .teacher-social-list li,
+.footer-social li,
+.subscribe-form li {
+  border: 2px solid #107462 !important;
+}
+
+.text-gradiant {
+  -webkit-text-fill-color: #107462;
+}
+
+.section-title .subtitle {
+  letter-spacing: 0px;
+  margin-bottom: 10px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.course-title:after {
+  background-color: #107462;
+}
+
+.service-text p {
+  color: #ff8933;
+}
+
+.owl-dots .owl-dot {
+  background-color: #ff8933;
+}
+
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+  background-color: #ff8933;
+}
+
+.service-icon .text-gradiant {
+  -webkit-text-fill-color: #ff8933;
+}
+
+#why-choose-us .subtitle::after,
+#why-choose-us .subtitle::before {
+  color: #ff8933 !important;
+  text-shadow: 15px 0 #ff8933 !important;
+}
+
+.student-qoute {
+  border-color: #ff8933 !important;
+}
+.student-qoute::after {
+  background-color: #ff8933 !important;
+  color: #107462 !important;
+}
+
+.student-name-designation * {
+  color: #ff8933 !important;
+  font-size: 16px !important;
+}
+.student-name-designation .st-name::after {
+  background-color: #ff8933 !important;
+}
+
+.widget-title::after {
+  background-color: #107462;
+}
+
+.contact-address-details {
+  border-color: #ff8933;
+}
+.contact-address-details .address-icon {
+  -o-border-image: none !important;
+  border-image: none !important;
+}
+
+#course-teacher .teacher-img-content {
+  background-color: #107462;
+  box-shadow: 0 0 5px 0 #555;
+}
+#course-teacher .teacher-img-content .teacher-cntent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#course-teacher
+  .teacher-img-content
+  .teacher-cntent
+  .teacher-img-category
+  .teacher-img::after {
+  display: none;
+}
+#course-teacher .teacher-img-content .teacher-img {
+  height: 100px;
+  width: 100px;
+  position: inherit;
+}
+#course-teacher .teacher-img-content .teacher-img img {
+  border-radius: 50%;
+  box-shadow: 0 0 5px 0 #555;
+}
+#course-teacher .teacher-img-content .teacher-social-name {
+  max-width: 120px !important;
+}
+#course-teacher .teacher-img-content .teacher-social-name ul {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#course-teacher .teacher-img-content .teacher-social-name ul li {
+  background-color: #ff8933;
+  color: #fff;
+  margin-inline-end: 10px;
+}
+#course-teacher .teacher-img-content .teacher-social-name ul li:hover {
+  color: #107462;
+}
+#course-teacher .teacher-img-content .teacher-social-name span {
+  color: #fff !important;
+}
+#course-teacher .genius-btn {
+  background-color: #ff8933 !important;
+}
+#course-teacher .genius-btn a,
+#course-teacher .genius-btn i {
+  color: #fff;
+}
+
+#contact-area i {
+  color: #fff !important;
+}
+
+#footer-area .footer-logo img {
+  max-width: 180px;
+}
+
+html[lang="ar"] .teacher-img-content .teacher-img {
+  right: inherit;
+}
+
+html[lang="ar"] .section-title .subtitle:after {
+  left: -55px;
+} /*# sourceMappingURL=custom.css.map */

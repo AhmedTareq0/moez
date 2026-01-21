@@ -1,0 +1,36 @@
+--- a/src/Alias.php
++++ b/src/Alias.php
+@@
+-        try {
+-            $facade::fake();
+-            $fake = $facade::getFacadeRoot();
+-            if ($fake !== $real) {
+-                $this->addClass(get_class($fake));
+-            }
+-        } finally {
+-            $facade::swap($real);
+-        }
++        try {
++            // Avoid calling fake() on facades that require parameters (e.g. Socialite)
++            // Check the method signature and only call when there are no required params.
++            try {
++                $ref = new \ReflectionMethod($facade, 'fake');
++                if ($ref->getNumberOfRequiredParameters() === 0) {
++                    $facade::fake();
++                    $fake = $facade::getFacadeRoot();
++                    if ($fake !== $real) {
++                        $this->addClass(get_class($fake));
++                    }
++                }
++            } catch (\ReflectionException $e) {
++                // no fake method or cannot reflect it; skip
++            } catch (\Throwable $e) {
++                // any other error while trying to fake; skip
++            }
++        } finally {
++            try {
++                $facade::swap($real);
++            } catch (\Throwable $e) {
++                // ignore
++            }
++        }

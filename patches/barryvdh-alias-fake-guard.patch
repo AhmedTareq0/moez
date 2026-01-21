@@ -1,0 +1,66 @@
+*** Begin Patch
+*** Update File: src/Alias.php
+@@
+-        try {
+-            $facade::fake();
+-            $fake = $facade::getFacadeRoot();
+-            if ($fake !== $real) {
+-                $this->addClass(get_class($fake));
+-            }
+-        } finally {
+-            $facade::swap($real);
+-        }
++        try {
++            // Some facades (e.g. Laravel\Socialite\Socialite) define fake() with required
++            // parameters. Calling them without arguments causes an ArgumentCountError.
++            // Wrap in try/catch and skip facades that cannot be faked this way.
++            try {
++                $facade::fake();
++                $fake = $facade::getFacadeRoot();
++                if ($fake !== $real) {
++                    $this->addClass(get_class($fake));
++                }
++            } catch (\Throwable $e) {
++                // Could not fake this facade (wrong signature or other error). Skip.
++            }
++        } finally {
++            // Restore original facade root when possible
++            try {
++                $facade::swap($real);
++            } catch (\Throwable $e) {
++                // ignore swap errors
++            }
++        }
+--- a/src/Alias.php
++++ b/src/Alias.php
+@@
+-        try {
+-            $facade::fake();
+-            $fake = $facade::getFacadeRoot();
+-            if ($fake !== $real) {
+-                $this->addClass(get_class($fake));
+-            }
+-        } finally {
+-            $facade::swap($real);
+-        }
++        try {
++            // Some facades (e.g. Laravel\Socialite\Socialite) define fake() with required
++            // parameters. Calling them without arguments causes an ArgumentCountError.
++            // Wrap in try/catch and skip facades that cannot be faked this way.
++            try {
++                $facade::fake();
++                $fake = $facade::getFacadeRoot();
++                if ($fake !== $real) {
++                    $this->addClass(get_class($fake));
++                }
++            } catch (\Throwable $e) {
++                // Could not fake this facade (wrong signature or other error). Skip.
++            }
++        } finally {
++            // Restore original facade root when possible
++            try {
++                $facade::swap($real);
++            } catch (\Throwable $e) {
++                // ignore swap errors
++            }
++        }
